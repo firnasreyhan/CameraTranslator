@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".HelpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/holo_blue_light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Bantuan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Metode penerjemahan gambar"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Pilih menu metode penerjemahan menggunakan gambar."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="31dp"
+                                android:layout_height="31dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/ic_photo"
+                                android:adjustViewBounds="true"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Kemudian tekan tombol ''Pilih Gambar'' untuk memilih gambar."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_button_blue"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:enabled="false"
+                        android:text="Pilih Gambar"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Kemudian pilih lokasi gambar yang akan diterjemahkan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/choose_image"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Setelah memilih gambar, aplikasi akan mendeteksi teks dan bahasa dari gambar tersebut. Kemudian pilih bahasa tujuan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_language"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Setelah memilih bahasa tujuan, tekan tombol ''Terjemahkan'' untuk mulai proses penerjemahan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_button_blue"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:enabled="false"
+                        android:text="Terjemahkan"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Metode penerjemahan suara"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Pilih menu metode penerjemahan menggunakan suara."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="31dp"
+                                android:layout_height="31dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/ic_microphone"
+                                android:adjustViewBounds="true"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Suara"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Pilih bahasa asal dari suara yang ingin diterjemahkan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_language"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Kemudian tekan tombol ''Rekam Suara'' untuk mulai merekam suara yang ingin diterjemahkan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_button_blue"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:enabled="false"
+                        android:text="Rekam Suara"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Kemudain akan muncul tampilan seperti berikut, sebagai pertanda bahwa suara mulai direkam."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/google_voice"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Setelah berhasil merekam suara yang ingin diterjemahkan, kemudian pilih bahasa tujuan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_language"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Setelah memilih bahasa tujuan, tekan tombol ''Terjemahkan'' untuk mulai proses penerjemahan."
+                        android:fontFamily="@font/montserrat_light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_button_blue"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:enabled="false"
+                        android:text="Terjemahkan"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

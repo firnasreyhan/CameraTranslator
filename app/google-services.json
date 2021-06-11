@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "958316605810",
+    "firebase_url": "https://cameratranslator-6c097.firebaseio.com",
+    "project_id": "cameratranslator-6c097",
+    "storage_bucket": "cameratranslator-6c097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958316605810:android:85ff1ef9175fdb42602deb",
+        "android_client_info": {
+          "package_name": "com.ryancandra.uts.cameratranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958316605810-jfljibdceahm55b6t6u4j6odms2qvock.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ryancandra.uts.cameratranslator",
+            "certificate_hash": "6c13f68d06f9ea656e282421cbef6ae0e43764a1"
+          }
+        },
+        {
+          "client_id": "958316605810-dv5l823hrcu1hj46vnhqhn4orofu0rt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr5krfl1QGMKmjHHrpHbpK8FXLc4eRENI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958316605810-dv5l823hrcu1hj46vnhqhn4orofu0rt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
